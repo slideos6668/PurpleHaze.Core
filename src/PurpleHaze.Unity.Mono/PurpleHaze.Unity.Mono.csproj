@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Unity 2019 Mono / Muck: netstandard2.0 is the safe portable target -->
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <RootNamespace>PurpleHaze.Unity.Mono</RootNamespace>
+    <AssemblyName>PurpleHaze.Unity.Mono</AssemblyName>
+    <Version>0.1.0</Version>
+    <Description>
+      Purple Haze Core — Doorstop entry assembly for Unity Mono games (Muck first).
+      No BepInEx required. Doorstop invokes Doorstop.Entrypoint.Start().
+    </Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PurpleHaze.SDK\PurpleHaze.SDK.csproj" />
+  </ItemGroup>
+
+</Project>

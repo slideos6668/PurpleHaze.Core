@@ -1,0 +1,11 @@
+{
+  "manifestVersion": 1,
+  "id": "example.plugin",
+  "name": "Example Plugin",
+  "author": "Purple Haze Team",
+  "version": "1.0.0",
+  "description": "Sample plugin for Muck (Unity Mono) — registers demo capabilities.",
+  "requiredApiVersion": "0.1.0",
+  "dependencies": [],
+  "entryType": "PurpleHaze.SamplePlugin.ExamplePlugin"
+}

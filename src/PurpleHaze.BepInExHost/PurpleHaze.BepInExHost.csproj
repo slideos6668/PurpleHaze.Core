@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <RootNamespace>PurpleHaze.BepInExHost</RootNamespace>
+    <AssemblyName>PurpleHaze.BepInExHost</AssemblyName>
+    <Version>0.1.0</Version>
+    <Description>BepInEx 5 plugin that hosts Purple Haze Core inside a Unity Mono game (Muck-first).</Description>
+    <DefineConstants>$(DefineConstants);PURPLEHAZE_STANDALONE_BUILD</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PurpleHaze.SDK\PurpleHaze.SDK.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup Condition="Exists('libs/BepInEx.dll')">
+    <DefineConstants>$(DefineConstants);HAS_BEPINEX</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup Condition="Exists('libs/BepInEx.dll')">
+    <Reference Include="BepInEx">
+      <HintPath>libs/BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition="Exists('libs/UnityEngine.dll')">
+    <Reference Include="UnityEngine">
+      <HintPath>libs/UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition="Exists('libs/UnityEngine.CoreModule.dll')">
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>libs/UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

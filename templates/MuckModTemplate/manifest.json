@@ -1,0 +1,11 @@
+{
+  "manifestVersion": 1,
+  "id": "muckmod.template",
+  "name": "Muck Mod Template",
+  "author": "You",
+  "version": "1.0.0",
+  "description": "Harmony + attribute template for Purple Haze / Muck",
+  "requiredApiVersion": "0.1.0",
+  "dependencies": [],
+  "entryType": "MuckModTemplate.Plugin"
+}

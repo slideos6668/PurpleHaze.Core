@@ -1,0 +1,11 @@
+{
+  "gameId": "unity.mono.generic",
+  "displayName": "Unity Mono (generic)",
+  "scriptingBackend": "mono",
+  "adapterId": "unity.mono",
+  "recommendedHost": "doorstop",
+  "notes": [
+    "Experimental profile for any Unity Mono title.",
+    "Only Muck has been validated end-to-end in this repo."
+  ]
+}

@@ -1,0 +1,17 @@
+# Build output
+**/bin/
+**/obj/
+**/TestResults/
+.vs/
+*.user
+*.suo
+*.cache
+
+# Local game installs / downloaded dependencies
+*.log
+*.dmp
+Doorstop-Release/
+
+# Archives and local packages
+*.zip
+*.7z

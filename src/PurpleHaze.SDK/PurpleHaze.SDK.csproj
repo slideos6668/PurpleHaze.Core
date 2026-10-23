@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net8.0</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Authors>Purple Haze Team</Authors>
+    <Description>Shared plugin API for Purple Haze Core mod loader.</Description>
+    <Version>0.1.0</Version>
+    <RootNamespace>PurpleHaze.SDK</RootNamespace>
+  </PropertyGroup>
+
+  <!-- System.Text.Json only on net8 desktop tools — NOT on netstandard for Unity Mono -->
+  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
+    <!-- built-in on net8 -->
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,25 @@
+{
+  "gameId": "muck",
+  "displayName": "Muck",
+  "steamAppId": 1625450,
+  "unityVersion": "2019.4.19f1",
+  "scriptingBackend": "mono",
+  "adapterId": "unity.mono",
+  "dataFolderName": "Muck_Data",
+  "executableNames": [ "Muck.exe", "Muck.x86_64", "Muck" ],
+  "managedRelativePath": "Muck_Data/Managed",
+  "recommendedHost": "bepinex5",
+  "bepInEx": {
+    "majorVersion": 5,
+    "thunderstorePackage": "BepInEx-BepInExPack_Muck",
+    "pluginFolder": "BepInEx/plugins",
+    "targetFramework": "net472"
+  },
+  "notes": [
+    "Community modding uses BepInEx 5 (Thunderstore BepInExPack_Muck).",
+    "Assembly-CSharp.dll lives under Muck_Data/Managed (Mono).",
+    "No kernel anti-cheat is part of the standard Muck install; still respect multiplayer fairness.",
+    "Purple Haze in-game host is delivered as a BepInEx plugin that starts the bridge."
+  ],
+  "validatedInThisRepo": false
+}

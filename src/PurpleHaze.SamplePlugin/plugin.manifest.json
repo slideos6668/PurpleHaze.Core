@@ -1,0 +1,12 @@
+{
+  "manifestVersion": 1,
+  "id": "example.plugin",
+  "name": "Example Plugin",
+  "author": "Purple Haze Team",
+  "version": "1.0.0",
+  "description": "Sample plugin demonstrating capability registration and lifecycle for Purple Haze Core.",
+  "requiredApiVersion": "0.1.0",
+  "dependencies": [],
+  "homepage": "https://github.com/example/purple-haze",
+  "entryType": "PurpleHaze.SamplePlugin.ExamplePlugin"
+}

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>PurpleHaze.ManagerApi</RootNamespace>
+    <Version>0.1.0</Version>
+    <Description>API for the Purple Haze WPF client: detect games, install/uninstall mod loader, list profiles.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PurpleHaze.Adapters\PurpleHaze.Adapters.csproj" />
+  </ItemGroup>
+</Project>

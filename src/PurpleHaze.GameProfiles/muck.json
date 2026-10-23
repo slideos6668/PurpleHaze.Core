@@ -1,0 +1,34 @@
+{
+  "gameId": "muck",
+  "displayName": "Muck",
+  "steamAppId": 1625450,
+  "unityVersion": "2019.4.19f1",
+  "scriptingBackend": "mono",
+  "adapterId": "unity.mono",
+  "dataFolderName": "Muck_Data",
+  "executableNames": [
+    "Muck.exe",
+    "Muck.x86_64",
+    "Muck"
+  ],
+  "managedRelativePath": "Muck_Data/Managed",
+  "recommendedHost": "doorstop",
+  "bepInEx": {
+    "majorVersion": 5,
+    "thunderstorePackage": "BepInEx-BepInExPack_Muck",
+    "pluginFolder": "BepInEx/plugins",
+    "targetFramework": "net472"
+  },
+  "notes": [
+    "Option B: Doorstop-only entry (no BepInEx).",
+    "Assembly-CSharp.dll under Muck_Data/Managed (Mono).",
+    "Plugins under Muck/PurpleHaze/plugins/.",
+    "BepInEx is optional alternate path only."
+  ],
+  "validatedInThisRepo": false,
+  "doorstop": {
+    "targetAssembly": "PurpleHaze/core/PurpleHaze.Unity.Mono.dll",
+    "configTemplate": "deploy/muck-doorstop/doorstop_config.ini",
+    "entryType": "Doorstop.Entrypoint.Start"
+  }
+}
